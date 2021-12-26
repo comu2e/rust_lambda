@@ -1,0 +1,288 @@
+{
+  "version": "15.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "rust-lambda-cdk": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "rust-lambda-cdk.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/rust-lambda-cdk": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660",
+              "id": "c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660",
+              "packaging": "zip",
+              "sourceHash": "c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660",
+              "s3BucketParameter": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660S3BucketA4476D6F",
+              "s3KeyParameter": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660S3VersionKeyEE48F583",
+              "artifactHashParameter": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660ArtifactHashF2068312"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:37)",
+              "new Asset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:93:40)",
+              "AssetCode.bind (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:348:29)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/main/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mainServiceRole618ECD8D",
+            "trace": [
+              "new Role (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:201:18)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:328:31)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/main/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mainServiceRoleDefaultPolicy7BF590B4",
+            "trace": [
+              "new Policy (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:238:28)",
+              "Function.addToRolePolicy (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:158:15)",
+              "Function.buildTracingConfig (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:728:10)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:420:27)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/main/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "main7AD10839",
+            "trace": [
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:398:35)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/AssetParameters/c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660S3BucketA4476D6F",
+            "trace": [
+              "new FileAssetParameters (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:37)",
+              "new Asset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:93:40)",
+              "AssetCode.bind (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:348:29)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/AssetParameters/c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660S3VersionKeyEE48F583",
+            "trace": [
+              "new FileAssetParameters (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:37)",
+              "new Asset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:93:40)",
+              "AssetCode.bind (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:348:29)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/AssetParameters/c96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc96e17cb191a687b43568980b2bf83482a0549fa7b01e389524970301f978660ArtifactHashF2068312",
+            "trace": [
+              "new FileAssetParameters (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:37)",
+              "new Asset (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:93:40)",
+              "AssetCode.bind (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:348:29)",
+              "new LambdaStack (/Users/eiji/private/rust-lambda-cdk/deploy/lib/lambda-stack.ts:18:19)",
+              "new Stack (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:12:24)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/deploy/stack.ts:17:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Module.m._compile (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1371:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/index.ts:1374:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1097:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/eiji/private/rust-lambda-cdk/node_modules/@cspotcode/source-map-support/source-map-support.js:613:40)"
+            ]
+          }
+        ],
+        "/rust-lambda-cdk/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/eiji/private/rust-lambda-cdk/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/eiji/private/rust-lambda-cdk/node_modules/@cspotcode/source-map-support/source-map-support.js:613:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "rust-lambda-cdk"
+    }
+  }
+}

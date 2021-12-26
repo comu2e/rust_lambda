@@ -1,5 +1,5 @@
 [package]
-name = "rust_lambda"
+name = "rust-lambda-cdk"
 version = "0.1.0"
 edition = "2021"
 

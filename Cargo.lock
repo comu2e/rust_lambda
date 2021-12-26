@@ -474,7 +474,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust_lambda"
+name = "rust-lambda-cdk"
 version = "0.1.0"
 dependencies = [
  "netlify_lambda",
